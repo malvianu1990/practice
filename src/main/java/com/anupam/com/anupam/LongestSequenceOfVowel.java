@@ -1,9 +1,10 @@
 package com.anupam.com.anupam;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class LongestSequenceOfVowel {
-    private final static Set<Character> vowels = Set.of('a','e','i','o','u');
+    private final static Set<Character> vowels = new HashSet<>();//et.of('a','e','i','o','u');
     public static String longestSequenceOfVowels(String s) {
         StringBuilder resultString = new StringBuilder();
         for(char a : s.toCharArray()) {
